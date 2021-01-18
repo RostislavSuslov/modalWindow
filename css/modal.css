@@ -1,20 +1,20 @@
-
 .vmodal.open .modal-overlay,
-.vmodal.open .modal-window{
+.vmodal.open .modal-window {
     opacity: 1;
     z-index: 1000;
 }
 
-.vmodal.open .modal-window{
+.vmodal.open .modal-window {
     transform: translateY(100px);
 }
 
 .modal-overlay,
-.modal-window{
+.modal-window {
     opacity: 0;
     z-index: -1;
     transition: .5s;
 }
+
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -48,10 +48,19 @@
     cursor: pointer;
 }
 
+.modal-close.true {
+    display: block;
+}
+
+.modal-close.false {
+    display: none;
+}
+
 .modal-body {
     padding: 10px;
     border-bottom: 1px solid #bdbdbd;
 }
+
 .modal-footer {
     padding: 5px 10px;
     border-bottom: 1px solid #bdbdbd;
